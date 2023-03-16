@@ -8,3 +8,13 @@ def read_file():
         # print(rows)
 
     return rows
+
+
+
+
+
+
+
+
+
+
