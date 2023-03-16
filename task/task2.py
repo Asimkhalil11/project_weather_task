@@ -8,7 +8,8 @@ for row in files_values:
     min_temp = row.split(",")[3]
 
     max_min_diff = int(max_temp) - int(min_temp)
-    print(date, "Maximum & Minimum Diff", max_min_diff)
+    average = max_min_diff/2
+    print(date, "Maximum & Minimum average", average)
 
 
 
