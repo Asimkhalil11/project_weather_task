@@ -1,5 +1,28 @@
-Hello World............How are you.
-My Name is Asim Khalil
-My Father name is Noor ul Haq
-ISDP Student
-Jamia Ashrafia Lahore
+Vim editor used is very simple. when used vim editor,
+first we are open terminal from Where we have to put the file,
+and we write command vim and file name,
+if this file already exists, So this file will open,
+if this file dose not already exists, so open the new file,
+
+i key for Insert 
+esc key for skip
+k,j,l,h key for top buttom right left
+:wq for save and exit
+:q! for not save and exit
+
+
+nano also used same vim editor but this command is little bit different.
+when we open nano editor we used comman on trminal nano then file name
+than open the file and we text and we will do file save for this command "ctrl+x" and type y
+
+
+
+
+
+
+
+
+
+
+
+.  
