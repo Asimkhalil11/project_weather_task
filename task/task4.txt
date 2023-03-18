@@ -3,6 +3,12 @@ its is very simple editor but it is very helpful.
 i learned many command vim editor and i learnd many command nano editor.
 but there are many command that i have to learn. 
 
+nano also used same vim editor but this command is little bit different.
+when we open nano editor we used comman on trminal nano then file name
+than open the file and we text and we will do file save for this command "ctrl+x" and type y
+
+
+
 
 
 

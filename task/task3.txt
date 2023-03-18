@@ -11,11 +11,6 @@ k,j,l,h key for top buttom right left
 :q! for not save and exit
 
 
-nano also used same vim editor but this command is little bit different.
-when we open nano editor we used comman on trminal nano then file name
-than open the file and we text and we will do file save for this command "ctrl+x" and type y
-
-
 
 
 
