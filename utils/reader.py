@@ -24,8 +24,6 @@ def read_file_f2():
         rows = []
         for row in contents.split("\n")[1:-1]:
             rows.append(row)
-        # print(rows)
-
     return rows
 
 
