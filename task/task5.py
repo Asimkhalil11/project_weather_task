@@ -7,4 +7,4 @@ for row in file2_content:
     event = row.split(",")[-2]
 
     if event in ["Rain", "Snow", "Rain-Snow"]:
-        print(f"Date {event_date} Event {event}")
+        print(f"Date {event_date} in {event}")

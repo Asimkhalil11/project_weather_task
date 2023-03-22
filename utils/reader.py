@@ -1,12 +1,12 @@
 def read_file(path):
-    rows = []
+    file_rows = []
 
     with open(path) as file_read:
         content = file_read.read()
         for row in content.split("\n")[1:-1]:
-            rows.append(row)
+            file_rows.append(row)
 
-    return rows
+    return file_rows
 
 
 
