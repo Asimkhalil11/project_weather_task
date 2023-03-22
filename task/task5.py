@@ -1,24 +1,10 @@
-from utils.reader import read_file_f2
+from utils.reader import read_file
 
-file_values = read_file_f2()
-# print(file_values)
+file2_content = read_file("/home/asim/Desktop/ISDP/Sir Hammad/project_weather_task/files/f2.csv")
 
-
-for row in file_values:
+for row in file2_content:
     date = row.split(",")[1]
     event = row.split(",")[-2]
 
     if event in ["Rain", "Snow", "Rain-Snow"]:
-        print(date,event)
-        # print(event)
-
-
-
-
-
-
-
-
-
-
-
+        print(f"Date {date} Event {event}")
