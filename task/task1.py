@@ -9,11 +9,3 @@ for row in file1_content:
 
     max_min_diff = int(max_temp) - int(min_temp)
     print(f"{date} Maximum & Minimum Diff {max_min_diff}")
-
-
-
-
-
-
-
-

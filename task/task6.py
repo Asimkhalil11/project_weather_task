@@ -6,7 +6,7 @@ file2_content = read_file("/home/asim/Desktop/ISDP/Sir Hammad/project_weather_ta
 for row in file2_content:
     date = row.split(",")[1]
     event = row.split(",")[22]
-    if event == "Thunderstorm":
+    if event in ["Thunderstorm"]:
         date_object = datetime.strptime(date, "%Y-%m-%d")
         week_day = date_object.strftime("%A")
         print(f"{event} {week_day}")
