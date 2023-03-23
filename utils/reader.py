@@ -1,20 +1,12 @@
-def read_file():
-    with open("/home/asim/Desktop/ISDP/Sir Hammad/project_weather_task/files/f1.csv") as f:
-        contents = f.read()
+def read_file(path):
+    file_rows = []
 
-        rows = []
-        for row in contents.split("\n")[1:-1]:
-            rows.append(row)
-        # print(rows)
+    with open(path) as file_read:
+        content = file_read.read()
+        for row in content.split("\n")[1:-1]:
+            file_rows.append(row)
 
-    return rows
-
-
-
-
-
-
-
+    return file_rows
 
 
 
