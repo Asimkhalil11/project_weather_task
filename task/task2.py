@@ -1,13 +1,14 @@
-from utils.reader import weather_read_file
+from utils.contants import MapperIndexF1
+from utils.reader import get_file_content
 
-file1_content = weather_read_file("/home/asim/Desktop/ISDP/Sir Hammad/project_weather_task/files/f1.csv")
+file_content = get_file_content("/home/asim/Desktop/ISDP/Sir Hammad/project_weather_task/files/f1.csv")
 
-for row in file1_content:
-    date_string = row.split(",")[0]
-    max_temp = row.split(",")[1]
-    min_temp = row.split(",")[3]
+for row_content in file_content:
+    date_column = row_content.split(",")[MapperIndexF1.DATE]
+    max_temperature = row_content.split(",")[MapperIndexF1.MAX_TEMPERATURE]
+    min_temperature = row_content.split(",")[MapperIndexF1.MIN_TEMPERATURE]
 
-    max_min_diff = int(max_temp) - int(min_temp)
-    average = max_min_diff/2
+    max_min_difference = int(max_temperature) - int(min_temperature)
+    average = max_min_difference/2
 
-    print(date_string, "Maximum & Minimum average", average)
+    print(date_column, "Maximum & Minimum average", average)
