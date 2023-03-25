@@ -1,10 +1,11 @@
-from utils.reader import read_file
+from utils.contants import MapperIndexF2
+from utils.reader import get_file_content
 
-file2_content = read_file("/home/asim/Desktop/ISDP/Sir Hammad/project_weather_task/files/f2.csv")
+file_content = get_file_content("/home/asim/Desktop/ISDP/Sir Hammad/project_weather_task/files/f2.csv")
 
-for row in file2_content:
-    event_date = row.split(",")[1]
-    event = row.split(",")[-2]
+for row_content in file_content:
+    date_column = row_content.split(",")[MapperIndexF2.DATE]
+    event_column = row_content.split(",")[MapperIndexF2.EVENT]
 
-    if event in ["Rain", "Snow", "Rain-Snow"]:
-        print(f"Date {event_date} in {event}")
+    if event_column in ["Rain", "Snow", "Rain-Snow"]:
+        print(f"Date {date_column} in {event_column}")
